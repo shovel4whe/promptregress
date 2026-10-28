@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shovel4whe-promptregress"
+version = "0.1.0"
+description = "按给定权重把总额度分配到各项，报告超分配项与利用率"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "shovel4whe" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://shovel4whe.github.io"
+Repository = "https://github.com/shovel4whe/promptregress"
+Issues = "https://github.com/shovel4whe/promptregress/issues"
+
+[project.scripts]
+promptregress = "promptregress:main"
+
+[tool.setuptools]
+py-modules = ["promptregress"]
